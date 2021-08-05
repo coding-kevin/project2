@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="button" value="fetch" onclick="
+		fetch('css').then(function(response){
+			response.text().then(function(){
+				alert(text);
+			})
+		})
+	">
+</body>
+</html>
