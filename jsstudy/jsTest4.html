@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+    <script>
+        /* 변수 선언 비교 var, let const */
+        let a = 1; // 재선언 되지 않는다 에러발생.
+        //let a = 2; // error
+        a = 2; // 가능
+
+        var b = 'abc'; // 재선언 가능
+        console.log(b);
+        var b = 2;
+        console.log(b);
+
+        const c = 1234; // 상수
+        c= 40; // error
+
+        /* 
+            비교연산자 >= <= > <  : 크거나 같다 작거나 같다 크다 작다
+            동등연산자 ==  equal : 좌항과 우항이 같다 boolean 값으로 치환
+            ex) alert(1==2);  false
+                alert(2==2);  true
+
+            일치연산자 === strict equal : 
+        */
+
+        alert(1==='1'); // 숫자 문자비교 false 데이터 형식까지 일치할 경우 true
+        alert(1=='1'); // true 정보만 일치하면 true
+
+        alert(null == undefined); // true null 값이없다(의도적으로 부여) : undefined 값이 정의되지 않음(의도하지 않은 상황)  차이
+        // === 으로는 false
+        // NaN , 0을 0으로 나눈 것, 계산할 수 없는 값이여서 비교할 수 없음
+
+        // != 부정연산자 
+
+    </script>
+</body>
+</html>
