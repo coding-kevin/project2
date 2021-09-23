@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+    <script>
+        /* 
+            반복문 while , for 
+
+            while(조건){
+                반복적으로 실행할 코드
+            }
+
+            for(초기식;반복식;조건식){
+
+            }
+
+
+        */
+
+        var i = 0;
+        while(i < 10){    
+            document.write("Coding everybody!! <br />");
+            i++;
+        }// 9번 반복함
+
+
+        for(var i = 0; i<10; i++){
+            document.write( i + " javascript!! <br />");
+        }
+
+
+        for(var i = 0; i<10; i++){
+            if(i==4){
+                continue; // 4는 스킵하고 다음단계로
+                //break; // 반복문 밖으로 빠져나가라
+            }
+            document.write( i + " controll!! <br />");
+        }
+
+        for(var k = 0; k < 10; k++){
+            for(var j = 0; j < 10; j++){
+                document.write("script"+k+j+"<br/>");
+                
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
