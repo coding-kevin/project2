@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+
+    <ul>
+        <script>
+            var grades2 = {'fir': 10, 'sec': 6, 'thr': 80};
+            for(key in grades2) {
+                document.write("<li> key = "+ key + ", value = " + grades2[key]+"</li>");
+            };
+        </script>
+    </ul>
+
+    <script>
+         /* 
+            객체(Object) : 인덱스 값으로 문자 또는 직접 원하는 값을 지정하여 사용하는 것
+            ex)
+            {'first' : 40, 'second' : 80, 'third' : 56}
+         */
+
+        var obj = {
+             'first' : 40, 
+            'second' : 80, 
+            'third' : 56
+         };
+
+         document.write(obj['first']);
+         document.write('<br />');
+         
+         var obj2 = new Object();
+         obj2['four'] = 20;
+         obj2['five'] = 100;
+         
+         document.write(obj2['five']);
+         document.write('<br />');
+         document.write(obj2.four);
+
+         /* 반복문 통해 객체 다루기 */
+
+         var arr = ['a','b','c'];
+         for(var i=0; i<arr.length; i++){
+            console.log(arr[i]);
+         };
+
+         var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+        for(key in grades) {
+            document.write("key : "+key+" value : "+grades[key]+"<br />");
+        };
+
+        var grades2 = {'fir': 10, 'sec': 6, 'thr': 80};
+        for(key in grades2) {
+            document.write(grades2[key]+"<br/>");
+        };
+        
+        var content = {
+            'list' : {'lee' : 'eng', 'kim' : 'math', 'jung' : 'science'},
+            'show' : function(){
+                alert('java');
+            },
+            'show2' : function(){
+                console.log(this.list);
+            }
+        }
+        alert(content['list']['lee']);
+        
+        content['show']();
+        content['show2']();
+
+        /* this :  */
+    </script>
+</body>
+</html>
